@@ -19,7 +19,7 @@ void insertion_sort_list(listint_t **list)
 	for (forw = (*list)->next; forw && forw->perv; forw = forw->next)
 	{
 		for (; forw && forw->prev && forw->n < forw->prev->n;
-				forw = forw->prev)
+		     forw = forw->prev)
 		{
 			tmp = forw->prev;
 			swap(list, tmp, forw);
